@@ -1,9 +1,21 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
+
 
 public class Level : MonoBehaviour
 {
-    public string sceneName;
-    public int id;
+    public bool isLevelCompleted = false;
+    public bool isInitialized = false;
+
+
+
+    public virtual void IntializeLevel()
+    {
+        Debug.Log("Intialize Level");
+    }
+    
+    public void OnCompleteLevel()
+    {
+        isLevelCompleted = true;
+        LevelManager.Instance.LoadNextLevel();
+    }
 }
