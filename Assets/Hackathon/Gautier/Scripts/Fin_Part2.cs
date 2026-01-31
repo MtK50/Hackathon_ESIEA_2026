@@ -1,17 +1,18 @@
 using UnityEngine;
 
-public class Fin_Niveau : MonoBehaviour
+public class Fin_Part_2 : MonoBehaviour
+
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void OnTriggerEnter(Collider other)
