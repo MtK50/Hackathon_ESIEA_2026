@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Hackathon/Commun/Scene/SceneCommun.unity
+    guid: bb278e235c553164cb989adb3f09a410
+  - enabled: 1
+    path: Assets/Hackathon/Commun/Scene/Level1.unity
+    guid: e15bdfc35b2eb7e4eb978864d28c7671
+  - enabled: 1
+    path: Assets/Hackathon/Commun/Scene/Level2.unity
+    guid: 9fb93107686a08048a841b420d54158b
+  - enabled: 1
+    path: Assets/Hackathon/Commun/Scene/Level3.unity
+    guid: cf7388a7ae332d747a34d1741affa3be
+  - enabled: 1
+    path: Assets/Hackathon/Commun/Scene/Level4.unity
+    guid: 540cff909b51dd24484fbd8a1e9bf61f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c344d1a358edab84e9377cf07c77ed94, type: 2}
