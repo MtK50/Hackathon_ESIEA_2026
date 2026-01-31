@@ -26,7 +26,7 @@ public class VRButton : MonoBehaviour
         Invoke("LoadScene", 1f);
     }
 
-    private void LoadScene()
+    public void LoadScene()
     {
         LevelManager.Instance.LoadNextLevel();
         //SceneManager.LoadScene(sceneToLoad);
