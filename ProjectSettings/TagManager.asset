@@ -24,7 +24,6 @@ TagManager:
   - QDSUIToggleCheckboxRadio
   - QDSUIDestructiveButton
   - ThrowableObject
-  - Caillou
   layers:
   - Default
   - TransparentFX

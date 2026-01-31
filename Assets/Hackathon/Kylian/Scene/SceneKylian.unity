@@ -2240,7 +2240,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1967263091}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
         m_MethodName: LoadNextLevel
         m_Mode: 1
@@ -2811,7 +2811,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1967263091}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
         m_MethodName: LoadPreviousLevel
         m_Mode: 1
@@ -2870,8 +2870,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1967263089}
-  - component: {fileID: 1967263090}
   - component: {fileID: 1967263091}
+  - component: {fileID: 1967263090}
   m_Layer: 0
   m_Name: '[MANAGER] -----'
   m_TagString: Untagged
@@ -2904,9 +2904,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1967263088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea018cbd1583f4694e67d37b5b8257, type: 3}
+  m_Script: {fileID: 11500000, guid: c881761096a5c52428b281cb581717ea, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  m_EditorClassIdentifier: Assembly-CSharp::LevelManager
+  mainScene:
+    m_Handle: 0
+  levelsList: []
+  currentLevelId: 0
+  currentLevel: {fileID: 0}
 --- !u!114 &1967263091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2916,13 +2921,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1967263088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0c461b9b935ec64a91ea9dc0aebdc6c, type: 3}
+  m_Script: {fileID: 11500000, guid: a92eb06dce05cc24da2c7e21e156a900, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LevelManager
-  mainScene:
-    m_Handle: 0
-  levelsList: []
-  currentLevelId: 0
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  playerTransform: {fileID: 706567438}
 --- !u!1 &2005088174
 GameObject:
   m_ObjectHideFlags: 0
