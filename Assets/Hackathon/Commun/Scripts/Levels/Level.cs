@@ -15,6 +15,7 @@ public class Level : MonoBehaviour
     
     public void OnCompleteLevel()
     {
+        GameManager.Instance.cabane.SetActive(true);
         isLevelCompleted = true;
         LevelManager.Instance.LoadNextLevel();
     }

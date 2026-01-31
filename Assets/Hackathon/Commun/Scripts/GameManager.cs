@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
     public Transform playerTransform;
-    
+
+    public GameObject cabane;
     public List<GameObject> objectToDisableAtEnd = new List<GameObject>();
     public List<GameObject> objectToEnableAtEnd = new List<GameObject>();
     public TextMeshProUGUI endGameText;
