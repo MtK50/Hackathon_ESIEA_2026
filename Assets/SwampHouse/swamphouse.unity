@@ -291,6 +291,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: HideOut
       objectReference: {fileID: 0}
+    - target: {fileID: 6593762382368720407, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+      propertyPath: m_ConnectedBody
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593762382443721448, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+      propertyPath: m_ConnectedBody
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593762382908221659, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+      propertyPath: m_ConnectedBody
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593762383036091273, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+      propertyPath: m_ConnectedBody
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593762384013803212, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+      propertyPath: m_ConnectedBody
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593762384023535518, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+      propertyPath: m_ConnectedBody
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8144686799340999214, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -336,47 +360,26 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3831019648250892982, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+    - {fileID: 9030900879420384631, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+    - {fileID: 3831019648355056437, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+    - {fileID: 2419604539837916221, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+    - {fileID: 4173690902951656687, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+    - {fileID: 3831019648257925769, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+    - {fileID: 3831019649526858015, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+    - {fileID: 6593762383729376686, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+    - {fileID: 6593762383036091271, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+    - {fileID: 6593762384023535516, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+    - {fileID: 6593762382368720405, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+    - {fileID: 6593762382443721446, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+    - {fileID: 6593762384013803210, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+    - {fileID: 6593762382908221657, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+    - {fileID: 442439935809463177, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
+    - {fileID: 8059886164376875505, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8059886163110114835, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 233264317}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
---- !u!1 &233264316 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8059886163110114835, guid: 696e59b6d0b879946a6111454c3205ab, type: 3}
-  m_PrefabInstance: {fileID: 233264315}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &233264317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 233264316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_CustomShadowLayers: 0
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
-  m_RenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_ShadowRenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_Version: 4
-  m_LightLayerMask: 1
-  m_ShadowLayerMask: 1
-  m_RenderingLayers: 1
-  m_ShadowRenderingLayers: 1
 --- !u!1 &600883247
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,7 +409,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 10
   m_Range: 25
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
