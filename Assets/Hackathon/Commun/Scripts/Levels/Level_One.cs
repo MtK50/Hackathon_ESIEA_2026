@@ -1,5 +1,7 @@
 
 
+using UnityEngine;
+
 public class Level_One : Level
 {
     private bool isInitialized = false;
@@ -16,6 +18,7 @@ public class Level_One : Level
     {
         if (isInitialized) return;
         
+        Debug.Log("Intialize Level One");
         
         isInitialized = true;
         
