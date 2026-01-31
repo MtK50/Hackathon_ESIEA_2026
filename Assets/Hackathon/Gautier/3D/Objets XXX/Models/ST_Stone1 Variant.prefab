@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ST_Stone1 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1969192603740655825, guid: 6649b2f5cd1488d49be654766dfe7855, type: 3}
+      propertyPath: m_TagString
+      value: Caillou
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
