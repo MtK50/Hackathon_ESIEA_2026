@@ -28,7 +28,7 @@ public class ButtonTrigger : MonoBehaviour
 
     private void LoadScene()
     {
-       
+        SceneManager.LoadScene(sceneToLoad);
         const string debugMessage = "Scene loading is disabled for debugging purposes.";
         Debug.Log(debugMessage);
     }
