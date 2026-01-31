@@ -20,6 +20,7 @@ public class Fin_Part_2 : MonoBehaviour
         if (other.CompareTag("Caillou"))
         {
             Debug.Log("Fini ?");
+            LevelManager.Instance.currentLevel.OnCompleteLevel();
         }
     }
 

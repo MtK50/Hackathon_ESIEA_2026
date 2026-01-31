@@ -16,6 +16,7 @@ public class Fin_Part_1 : MonoBehaviour
             if (caillouCount >= 9)
             {
                 Debug.Log("Fini ?");
+                LevelManager.Instance.currentLevel.OnCompleteLevel();
             }
         }
 
