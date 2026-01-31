@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Level_Two : Level
 {
-    private bool isInitialized = false;
-    
     private void OnEnable()
     {
         LevelManager.Instance.currentLevel = this;
