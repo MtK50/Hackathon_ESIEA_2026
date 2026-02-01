@@ -18,7 +18,7 @@ public class Level_Six : Level
 
         Debug.Log("Intialize Level Six");
         GameManager.Instance.cabane.SetActive(true);
-        GameManager.Instance.playerTransform.transform.position = spawnPoint.position;
+        GameManager.Instance.playerTransform.transform.localPosition = spawnPoint.localPosition;
         isInitialized = true;
 
     }

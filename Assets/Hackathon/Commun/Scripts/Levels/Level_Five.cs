@@ -20,7 +20,7 @@ public class Level_Five : Level
 
         Debug.Log("Intialize Level Five");
         GameManager.Instance.cabane.SetActive(true);
-        GameManager.Instance.playerTransform.transform.position = spawnPoint.position;
+        GameManager.Instance.playerTransform.transform.localPosition = spawnPoint.position;
         isInitialized = true;
 
     }
