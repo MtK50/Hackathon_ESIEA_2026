@@ -25,6 +25,7 @@ TagManager:
   - QDSUIDestructiveButton
   - ThrowableObject
   - Caillou
+  - marto
   layers:
   - Default
   - TransparentFX
