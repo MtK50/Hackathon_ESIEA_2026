@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 7965430848191273282}
   - component: {fileID: 7597875442215381617}
   - component: {fileID: 6702930342322631361}
+  - component: {fileID: 4522242340148285073}
+  - component: {fileID: 8324568576180182526}
   m_Layer: 0
   m_Name: SPH_noire
   m_TagString: Untagged
@@ -291,3 +293,60 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &4522242340148285073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339187897223788052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c42c3b0acf154499722abc7e8a98bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BluetoothManager
+  m_DeviceName: 
+  m_ConnectionState: 0
+  m_BluetoothAddress: 
+  m_BluetoothID: 0
+  OnConnectedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDataSendEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDataReceiveEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8324568576180182526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339187897223788052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0624a4660dc1f7648843c49670a0d3b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WaterPumpController
+  m_ResetConnection: 0
+  m_MethodControl: 1
+  m_EmergencyReset: 0
+  m_ResetSystemDefault: 0
+  m_ResetUnFillTime: 10
+  m_CurrentState: 0
+  m_FillMaxTime: 20
+  m_Speed: 5
+  m_CurrentFill: 0
+  m_TargetFill: 75
+  m_RangeThreshold: 2
+  m_CurrentPressure: 0
+  m_TargetPressure: 0
+  m_PulseFillTime: 0.5
+  m_PulseUnFillTime: 0.5
+  m_PulseEnable: 0
+  m_CalibrateSystemAtStart: 0
+  m_StartCalibration: 0
+  m_UnFillTime: 5
+  m_CalibrationPressureThreshold: 1
