@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using Oculus.Interaction;
 using Oculus.Interaction.HandGrab;
@@ -30,6 +31,12 @@ public class TelegraphPuzzle : MonoBehaviour
 
     private Coroutine letterCoroutine;
 
+    private void OnTriggerEnter(Collider collision)
+    {
+        Debug.Log(collision.tag + " " + collision.gameObject.name);
+        
+    }
+    
     private void OnCollisionEnter(Collision collision)
     {
         if (!canInput) return;
@@ -44,16 +51,24 @@ public class TelegraphPuzzle : MonoBehaviour
             return;
         }
 
-        // ----- Main tracking Meta -----
-        var hand = collision.collider.GetComponentInParent<OVRHand>();
-
-        if (hand != null && hand.IsTracked)
-        {
-            StartCoroutine(RegisterInput("."));
-            Bridge.Instance?.SendLine("a:TOUCH:z:z");
-        }
+        // // ----- Main tracking Meta -----
+        // var hand = collision.collider.GetComponentInParent<OVRHand>();
+        //
+        // if (hand != null && hand.IsTracked)
+        // {
+        //     StartCoroutine(RegisterInput("."));
+        //     Bridge.Instance?.SendLine("a:TOUCH:z:z");
+        // }
     }
 
+    public void SendMorseCodeDot()
+    {
+        if (!canInput) return;
+        StartCoroutine(RegisterInput("."));
+        Bridge.Instance?.SendLine("a:TOUCH:z:z");
+    }
+    
+    
     IEnumerator RegisterInput(string symbol)
     {
         canInput = false;
