@@ -1,3 +1,4 @@
+using Oculus.Interaction.HandGrab.Recorder;
 using UnityEngine;
 
 public class Feedback_caillou : MonoBehaviour
@@ -7,6 +8,10 @@ public class Feedback_caillou : MonoBehaviour
     void Start()
     {
         
+    }
+    void Update()
+    {
+        OnGrab();
     }
 
     public void OnGrab()
