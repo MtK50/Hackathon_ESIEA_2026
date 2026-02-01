@@ -17,6 +17,11 @@ public class TelegraphPuzzle : MonoBehaviour
     public HandGrabInteractable hammer;
     public HandGrabInteractable hammer2;
 
+    public WaterPumpController pump;
+    public int remp = 0;
+    public AudioSource audioSource;
+    public AudioClip pumpSound;
+
     private List<string> targetLetters = new List<string>()
     {
         "-.-.",
@@ -34,7 +39,12 @@ public class TelegraphPuzzle : MonoBehaviour
     private void OnTriggerEnter(Collider collision)
     {
         Debug.Log(collision.tag + " " + collision.gameObject.name);
-        
+        if (collision.tag == "marto")
+        { 
+            if (!canInput) return;
+            StartCoroutine(RegisterInput("-"));
+            Bridge.Instance?.SendLine("z:TOUCH:z:z");
+        }
     }
     
     private void OnCollisionEnter(Collision collision)
@@ -105,9 +115,12 @@ public class TelegraphPuzzle : MonoBehaviour
         {
             Debug.Log("Bonne lettre !");
 
-            Bridge.Instance?.SendLine("z:TOUCH:z:z");
-            Bridge.Instance?.SendLine("z:TOUCH:z:z");
-            Bridge.Instance?.SendLine("z:TOUCH:z:z");
+            Bridge.Instance?.SendLine("b:TOUCH:z:z");
+            Bridge.Instance?.SendLine("b:TOUCH:z:z");
+            Bridge.Instance?.SendLine("b:TOUCH:z:z");
+            remp += 5;
+            pump.FillSettings(remp);
+            pump.Fill(true);
 
             currentLetterIndex++;
             currentLetterInput = "";
@@ -116,6 +129,26 @@ public class TelegraphPuzzle : MonoBehaviour
             {
                 Debug.Log("MOT COMPLET VALIDE !");
                 ResetPuzzle();
+                StartCoroutine(PumpRoutine());
+
+                IEnumerator PumpRoutine()
+                {
+                    pump.PulseSettings(0.15f, 0.15f);
+                    pump.Pulse(true);
+                    audioSource.PlayOneShot(pumpSound, 2f);
+
+                    yield return new WaitForSeconds(5f); // attente 5 secondes
+
+                    pump.Pulse(false);
+
+                    remp = 0;
+                    pump.FillSettings(remp);
+                    pump.Fill(true);
+                }
+
+
+                LevelManager.Instance.currentLevel.OnCompleteLevel();
+
             }
         }
         else
@@ -124,6 +157,9 @@ public class TelegraphPuzzle : MonoBehaviour
 
             Bridge.Instance?.SendLine("d:TOUCH:z:z");
             ResetPuzzle();
+            remp = 0;
+            pump.FillSettings(remp);
+            pump.Fill(true);
         }
     }
 

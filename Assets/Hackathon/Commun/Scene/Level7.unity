@@ -2424,6 +2424,96 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4d68997b67c66a4c91f96a7fe6e7501, type: 3}
+--- !u!1 &323763787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 323763790}
+  - component: {fileID: 323763789}
+  - component: {fileID: 323763788}
+  m_Layer: 0
+  m_Name: Haptic-Hand-Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &323763788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323763787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0624a4660dc1f7648843c49670a0d3b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ResetConnection: 0
+  m_MethodControl: 0
+  m_EmergencyReset: 0
+  m_ResetSystemDefault: 0
+  m_ResetUnFillTime: 10
+  m_CurrentState: 0
+  m_FillMaxTime: 20
+  m_Speed: 5
+  m_CurrentFill: 0
+  m_TargetFill: 0
+  m_RangeThreshold: 2
+  m_CurrentPressure: 0
+  m_TargetPressure: 0
+  m_PulseFillTime: 0.5
+  m_PulseUnFillTime: 0.5
+  m_PulseEnable: 0
+  m_CalibrateSystemAtStart: 0
+  m_StartCalibration: 0
+  m_UnFillTime: 5
+  m_CalibrationPressureThreshold: 1
+--- !u!114 &323763789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323763787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c42c3b0acf154499722abc7e8a98bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DeviceName: Haptic-Module-LesGrosGourmands
+  m_ConnectionState: 0
+  m_BluetoothAddress: 
+  m_BluetoothID: 0
+  OnConnectedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDataSendEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDataReceiveEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &323763790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323763787}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.29803, y: 1.77391, z: 7.57559}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &339866714 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a5786458ab641f74ca0f9bf68b94614d, type: 3}
@@ -3495,6 +3585,8 @@ MonoBehaviour:
   inputCooldown: 0.25
   hammer: {fileID: 0}
   hammer2: {fileID: 0}
+  pump: {fileID: 0}
+  remp: 0
 --- !u!1 &575579236
 GameObject:
   m_ObjectHideFlags: 0
@@ -4400,10 +4492,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 485f48b6561a26844a3c6aafe28f018d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TelegraphPuzzle
-  letterDelay: 1.2
-  inputCooldown: 0.25
+  letterDelay: 2
+  inputCooldown: 0.4
   hammer: {fileID: 2053932517}
   hammer2: {fileID: 1061762442}
+  pump: {fileID: 323763788}
+  remp: 0
 --- !u!114 &782227644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12990,3 +13084,4 @@ SceneRoots:
   - {fileID: 579126747}
   - {fileID: 346319764}
   - {fileID: 941593597}
+  - {fileID: 323763790}
