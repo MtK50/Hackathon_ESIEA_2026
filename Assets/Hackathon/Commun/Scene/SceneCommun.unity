@@ -3561,6 +3561,10 @@ MonoBehaviour:
   - id: 7
     sceneName: Level7
   - id: 8
+    sceneName: Level8
+  - id: 9
+    sceneName: Level9
+  - id: 10
     sceneName: Level10
   currentLevelId: 0
   currentLevel: {fileID: 0}

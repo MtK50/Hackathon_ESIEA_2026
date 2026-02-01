@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Hackathon/Commun/Scene/Level7.unity
     guid: 2ef1f0c37ec18f64a8764da95cbef37c
   - enabled: 1
+    path: Assets/Hackathon/Commun/Scene/Level8.unity
+    guid: 68dde2d2dea831e4dab113ff4204e9f3
+  - enabled: 1
     path: Assets/Hackathon/Commun/Scene/Level9.unity
     guid: ba3a2277d1019824bbbbc17d60db5347
   - enabled: 1
