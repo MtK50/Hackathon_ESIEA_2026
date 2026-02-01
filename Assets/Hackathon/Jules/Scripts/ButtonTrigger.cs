@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonTrigger : MonoBehaviour
 {
-    [SerializeField] private string sceneToLoad; // Nom de la scène à charger
+    
     [SerializeField] private bool isActivated = false;
 
     private void OnCollisionEnter(Collision collision)
